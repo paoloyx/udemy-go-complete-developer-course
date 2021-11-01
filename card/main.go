@@ -3,8 +3,10 @@ package main
 func main() {
 	// declare a slice
 	cards := newDeck()
-	hand, remainingCards := deal(cards, 5)
-	hand.print()
-	remainingCards.print()
+	cards.shuffle()
 
+	// save deck to file, reads and print it
+	cards.saveToFile("my_cards")
+	cards = newDeckFromFile("my_cards")
+	cards.print()
 }
