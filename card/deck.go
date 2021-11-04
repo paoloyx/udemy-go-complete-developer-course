@@ -21,7 +21,7 @@ func (d deck) print() {
 // returns a new complete deck of cards
 func newDeck() deck {
 
-	var cards deck
+	cards := deck{}
 	var cardSuites = []string{"Cuori", "Picche", "Mattoni", "Cuori"}
 	var cardValues = []string{"Uno", "Due", "Tre", "Quattro", "Cinque", "Sei", "Sette", "Otto", "Nove", "Dieci", "Fante", "Donna", "Re"}
 
